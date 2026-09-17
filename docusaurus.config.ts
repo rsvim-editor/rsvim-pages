@@ -6,7 +6,7 @@ const config: Config = {
   title: "RSVIM",
   tagline: "The VIM editor reinvented in Rust+TypeScript.",
   favicon:
-    "https://cdn.jsdelivr.net/gh/mivsr/assets@main/logo/RSVIM-logo-square.png",
+    "https://cdn.jsdelivr.net/gh/rsvim-editor/assets@main/logo/RSVIM-logo-square.png",
 
   future: {
     v4: true,
@@ -21,7 +21,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "mivsr", // Usually your GitHub org/user name.
+  organizationName: "rsvim-editor", // Usually your GitHub org/user name.
   projectName: "rsvim", // Usually your repo name.
 
   onBrokenLinks: "throw",
@@ -42,7 +42,7 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/mivsr/rsvim.github.io/tree/main/",
+          editUrl: "https://github.com/rsvim-editor/rsvim-pages/tree/main/",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -56,7 +56,7 @@ const config: Config = {
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
-      ({
+      {
         // Your options:
 
         // `hashed` is recommended as long-term-cache of index file is possible.
@@ -72,13 +72,14 @@ const config: Config = {
 
         // If you're using `noIndex: true`, set `forceIgnoreNoIndex` to enable local index:
         // forceIgnoreNoIndex: true,
-      }),
-    ]
+      },
+    ],
   ],
 
   themeConfig: {
     // Replace with your project's social card
-    image: "https://cdn.jsdelivr.net/gh/mivsr/assets@main/logo/RSVIM-logo-square.png",
+    image:
+      "https://cdn.jsdelivr.net/gh/rsvim-editor/assets@main/logo/RSVIM-logo-square.png",
     tableOfContents: {
       minHeadingLevel: 2,
       maxHeadingLevel: 6,
@@ -91,7 +92,7 @@ const config: Config = {
     navbar: {
       title: "RSVIM",
       logo: {
-        src: "https://cdn.jsdelivr.net/gh/mivsr/assets@main/logo/RSVIM-logo-square.png",
+        src: "https://cdn.jsdelivr.net/gh/rsvim-editor/assets@main/logo/RSVIM-logo-square.png",
       },
       items: [
         {
@@ -121,7 +122,7 @@ const config: Config = {
           position: "right",
         },
         {
-          href: "https://github.com/mivsr/rsvim",
+          href: "https://github.com/rsvim-editor/rsvim",
           // label: "GitHub",
           className: "header-github-link",
           position: "right",
@@ -170,7 +171,7 @@ const config: Config = {
             },
             {
               label: "RFC",
-              href: "https://github.com/mivsr/rfc",
+              href: "https://github.com/rsvim-editor/rfc",
             },
           ],
         },
